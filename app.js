@@ -3,9 +3,7 @@ var vm = new Vue({
     data: {
         image: 'image/cat.png',
         oldPrice: 100,
-        newPrice: 50,
-        picSrc: '',
-        picShow: true,
+        newPrice: 50,      
     },
     methods: {
         showPic: function(e){
@@ -19,7 +17,6 @@ var vm = new Vue({
                     document.body.appendChild(canvas);
                     canvas.id ='ctx'
 
-                    // document.getElementById('down1').href = canvas.toDataURL(); 
                 }
             })
         },
