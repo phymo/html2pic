@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 1000px;
+}
+#app{
+    background-color: #fff;
+}
+button,input{
+    margin-bottom: 20px;
+}
+#toPic{
+    
+    position: relative;
+    z-index: -1;
+    width: 600px;
+    height: 800px;
+    background-image: url('image/cat.png');
+    background-color: gray;
+    background-size:600px 500px;
+    background-repeat:no-repeat;
+}
+#price{
+    position: absolute;
+    bottom: 20px;
+}
+canvas{
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -300px;
+}

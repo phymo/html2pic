@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue-demo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="app" @click="closePic">
+        <button @click="showPic">点击分享</button> 
+        <br>
+        <label for="oldPrice">原价</label>
+        <input type="number" name="oldPrice" id="oldPrice" v-model="oldPrice"> 
+        <br>
+        <label for="newPrice">惊爆价</label>
+        <input type="number" name="newPrice" id="newPrice" v-model="newPrice">
+        <br>
+        <img src="image/cat.png" alt="">
+        <div id="toPic">
+            <div id="price">
+            <p>原价：{{oldPrice}}元</p>
+            <p>惊爆价：{{newPrice}}元</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="lib/vue.js"></script>
+    <script src="app.js"></script> 
+    <script src="https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.js"></script>  
+</body>
+</html>
